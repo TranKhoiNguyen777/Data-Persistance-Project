@@ -48,7 +48,7 @@ public class LoadGameRank : MonoBehaviour
             SaveData data = JsonUtility.FromJson<SaveData>(json);
 
             BestPlayer = data.TheBestPlayer;
-            BestScore = data.HighiestScore;
+            BestScore = data.HighestScore;
             SetBestPlayer();
         }
     }
@@ -56,7 +56,7 @@ public class LoadGameRank : MonoBehaviour
     [System.Serializable]
     class SaveData
     {
-        public int HighiestScore;
+        public int HighestScore;
         public string TheBestPlayer;
     }
 }
